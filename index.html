@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HF</title>
+</head>
+<body>
+<h1>Hello</h1>
+<form action="/predict" method="POST" class="form-inline">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="container">
+          <h4>Enter Cell Details</h4>
+          <div class="form-group">
+            <label for="Age">Age </label>
+            <input type="text" class="form-control" name="Age" required="required">
+          </div>
+          <div class="form-group">
+            <label for="RestingBP">RestingBP</label>
+            <input type="text" class="form-control" name="RestingBP" required="required">
+          </div>
+          <div class="form-group">
+            <label for="Cholesterol">Cholesterol</label>
+            <input type="text" class="form-control" name="Cholesterol" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="MaxHR">MaxHR</label>
+            <input type="text" class="form-control" name="MaxHR" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="Oldpeak">Oldpeak</label>
+            <input type="text" class="form-control" name="Oldpeak" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="ChestPainType_ASY">ChestPainType_ASY</label>
+            <input type="text" class="form-control" name="ChestPainType_ASY" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="ChestPainType_ATA">ChestPainType_ATA</label>
+            <input type="text" class="form-control" name="ChestPainType_ATA" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="FastingBS_0">FastingBS_0</label>
+            <input type="text" class="form-control" name="normal_nucleoli" required="required" />
+          </div>
+
+          <div class="form-group">
+            <label for="FastingBS_1">FastingBS_1</label>
+            <input type="text" class="form-control" name="FastingBS_1" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="RestingECG_LVH">RestingECG_LVH</label>
+            <input type="text" class="form-control" name="RestingECG_LVH" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="RestingECG_Normal">RestingECG_Normal</label>
+            <input type="text" class="form-control" name="RestingECG_Normal" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="RestingECG_ST">RestingECG_ST</label>
+            <input type="text" class="form-control" name="RestingECG_ST" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="ExerciseAngina_N">ExerciseAngina_N</label>
+            <input type="text" class="form-control" name="ExerciseAngina_N" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="ExerciseAngina_Y">ExerciseAngina_Y</label>
+            <input type="text" class="form-control" name="ExerciseAngina_Y" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="ST_Slope_Down">ST_Slope_Down</label>
+            <input type="text" class="form-control" name="ST_Slope_Down" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="ST_Slope_Flat">ST_Slope_Flat</label>
+            <input type="text" class="form-control" name="ST_Slope_Flat" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="ST_Slope_Up">ST_Slope_Up</label>
+            <input type="text" class="form-control" name="ST_Slope_Up" required="required" />
+         
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Predict Heart Failure</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
