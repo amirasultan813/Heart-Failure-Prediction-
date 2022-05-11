@@ -19,6 +19,22 @@ def index():
         return "<h1>Oops!" + ops + "occurred<h1>"
 
 
+@app.route("/symptoms")
+def symptoms():
+    return render_template("/templates/symptoms.html")
+
+
+
+@app.route("/diagnosing")
+def diagnosing():
+    return render_template("/templates/diagnosing.html")
+
+
+
+@app.route("/living")
+def living():
+    return render_template("/templates/living.html")
+
 
 @app.route("/go-test")
 def home():
