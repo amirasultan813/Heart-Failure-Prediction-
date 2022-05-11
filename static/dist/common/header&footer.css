@@ -1,0 +1,132 @@
+.navbar,
+footer.l-footer {
+    padding: 20px 0;
+    overflow: hidden;
+    background: #f2f2f2;
+    position: relative;
+    /* border-bottom: 1px solid #000 */
+}
+
+
+.navbar .logo {
+    width: 50%;
+    float: left;
+}
+.navbar img{
+    width: 140px;
+}
+.navbar {
+    background-image:url(/front/images/heart_failure.jpg);
+}
+
+.navbar input , .navbar label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%,50%);
+    -webkit-transform: translate(-50%,50%);
+    -moz-transform: translate(-50%,50%);
+    -ms-transform: translate(-50%,50%);
+    -o-transform: translate(-50%,50%);
+}
+
+.navbar input {
+    display: none
+}
+
+.navbar label {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url('../../images/open.png') no-repeat ;
+    background-size: cover;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.navbar input:checked ~ .ul-list {
+    display: block;
+}
+
+.navbar input:checked ~ label {
+    background: url('../../images/close.png') no-repeat ;
+    background-size: cover;
+}
+
+.navbar .ul-list {
+    width: 50%;
+    float: left;
+    list-style: none;
+}
+
+.navbar .ul-list .list-item {
+    display: inline-block;
+}
+
+.navbar .ul-list .list-item a {
+    display: block;
+    color: brown;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.navbar .ul-list .list-item a:hover {
+    color: #eb5424
+}
+
+/* Media for Navbar Style */ 
+
+@media (min-width : 992px) {
+    .navbar label {
+        display: none
+    }
+}
+
+@media (max-width : 991px) {
+    .navbar .logo {
+        width: 100%;
+        float: none;
+    }
+    
+    .navbar .ul-list {
+        width: 100%;
+        float:  none;
+        margin-top: 20px;
+        display: none
+    }
+    
+    .navbar .ul-list .list-item {
+        display: block;
+        text-align: center;
+    }
+}
+
+footer.l-footer .container{
+    width: 80%;
+    background: url('../../images/heart_failure.jpg') no-repeat ;
+    background-size: cover;
+}
+footer.l-footer ul{
+    list-style: none;
+}
+footer.l-footer img{
+    width: 80px;
+    background: url('../../images/heart_failure.jpg') no-repeat ;
+    background-size: cover;
+}
+footer.l-footer .list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background: url('../../images/heart_failure.jpg') no-repeat ;
+    background-size: cover;
+
+}
+
+footer.l-footer .list li a{
+    display: block;
+    
+    padding-block: 1rem;
+}
